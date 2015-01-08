@@ -58,12 +58,21 @@ public class CreateDBTable {
 			m1.setPid(null);
 			m1.setIsused("Y");
 			m1.setMyid("sysMgr");
+
+			Menu m = new Menu();
+			m.setName("内容管理");
+			m.setUrl("javascript:void(0);");
+			m.setIconCls("icon-sys");
+			m.setPid(null);
+			m.setIsused("Y");
+			m.setMyid("cmsMgr");
 			
+			dao.save(m);
 			dao.save(m1);
 			
 			Menu m2 = new Menu();
 			m2.setName("用户管理");
-			m2.setUrl("jsp/user/list.jsp");
+			m2.setUrl("jsp/admin/user/list.jsp");
 			m2.setIconCls("icon-sys");
 			m2.setPid(m1.getId());
 			m2.setIsused("Y");
@@ -71,7 +80,7 @@ public class CreateDBTable {
 
 			Menu m3 = new Menu();
 			m3.setName("菜单管理");
-			m3.setUrl("jsp/menu/list.jsp");
+			m3.setUrl("jsp/admin/menu/list.jsp");
 			m3.setIconCls("icon-sys");
 			m3.setPid(m1.getId());
 			m3.setIsused("Y");
@@ -79,7 +88,7 @@ public class CreateDBTable {
 
 			Menu m4 = new Menu();
 			m4.setName("字典管理");
-			m4.setUrl("jsp/systemCode/list.jsp");
+			m4.setUrl("jsp/admin/systemCode/list.jsp");
 			m4.setIconCls("icon-sys");
 			m4.setPid(m1.getId());
 			m4.setIsused("Y");
@@ -87,7 +96,7 @@ public class CreateDBTable {
 			
 			Menu m5 = new Menu();
 			m5.setName("部门管理");
-			m5.setUrl("jsp/organization/list.jsp");
+			m5.setUrl("jsp/admin/organization/list.jsp");
 			m5.setIconCls("icon-sys");
 			m5.setPid(m1.getId());
 			m5.setIsused("Y");
@@ -95,7 +104,7 @@ public class CreateDBTable {
 			
 			Menu m6 = new Menu();
 			m6.setName("角色管理");
-			m6.setUrl("jsp/role/list.jsp");
+			m6.setUrl("jsp/admin/role/list.jsp");
 			m6.setIconCls("icon-sys");
 			m6.setPid(m1.getId());
 			m6.setIsused("Y");
@@ -107,11 +116,79 @@ public class CreateDBTable {
 			//m1.setChild(child.toArray(new Menu[2]));
 			
 			
+			
+			//cms
+			Menu m7 = new Menu();
+			m7.setName("广告管理");
+			m7.setUrl("jsp/admin/cms/ad/list.jsp");
+			m7.setIconCls("icon-sys");
+			m7.setPid(m.getId());
+			m7.setIsused("Y");
+			m7.setMyid("adMgr");
+
+			Menu m8 = new Menu();
+			m8.setName("广告位管理");
+			m8.setUrl("jsp/admin/cms/adslot/list.jsp");
+			m8.setIconCls("icon-sys");
+			m8.setPid(m.getId());
+			m8.setIsused("Y");
+			m8.setMyid("adSlotMgr");
+
+			Menu m9 = new Menu();
+			m9.setName("文章管理");
+			m9.setUrl("jsp/admin/cms/aricle/list.jsp");
+			m9.setIconCls("icon-sys");
+			m9.setPid(m.getId());
+			m9.setIsused("Y");
+			m9.setMyid("aricleMgr");
+
+			Menu m10 = new Menu();
+			m10.setName("栏目管理");
+			m10.setUrl("jsp/admin/cms/channel/list.jsp");
+			m10.setIconCls("icon-sys");
+			m10.setPid(m.getId());
+			m10.setIsused("Y");
+			m10.setMyid("channelMgr");
+
+			Menu m11 = new Menu();
+			m11.setName("评论管理");
+			m11.setUrl("jsp/admin/cms/comment/list.jsp");
+			m11.setIconCls("icon-sys");
+			m11.setPid(m.getId());
+			m11.setIsused("Y");
+			m11.setMyid("commentMgr");
+
+			Menu m12 = new Menu();
+			m12.setName("配置管理");
+			m12.setUrl("jsp/admin/cms/config/list.jsp");
+			m12.setIconCls("icon-sys");
+			m12.setPid(m.getId());
+			m12.setIsused("Y");
+			m12.setMyid("configMgr");
+
+			Menu m13 = new Menu();
+			m13.setName("友情链接");
+			m13.setUrl("jsp/admin/cms/friendlink/list.jsp");
+			m13.setIconCls("icon-sys");
+			m13.setPid(m.getId());
+			m13.setIsused("Y");
+			m13.setMyid("friendlinkMgr");
+			
 			dao.save(m2);
 			dao.save(m3);
 			dao.save(m4);
 			dao.save(m5);
 			dao.save(m6);
+			dao.save(m7);
+			dao.save(m8);
+			dao.save(m9);
+			dao.save(m10);
+			dao.save(m11);
+			dao.save(m12);
+			dao.save(m13);
+			
+			
+			
 			//m1.setChild(child.toArray(new Menu[2]));
 			
 			

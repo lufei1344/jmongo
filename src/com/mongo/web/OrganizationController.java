@@ -71,7 +71,7 @@ public class OrganizationController {
 	public Object edit(HttpServletRequest request,HttpServletResponse response,Organization organization) {
 		String id = request.getParameter("id");
 		if("GET".equals(request.getMethod().toString().toUpperCase())){
-			ModelAndView mav = new ModelAndView("/jsp/organization/edit");
+			ModelAndView mav = new ModelAndView("/jsp/admin/organization/edit");
 			mav.addObject("page", organizationDao.find(id));
 			return mav;
 		}else{

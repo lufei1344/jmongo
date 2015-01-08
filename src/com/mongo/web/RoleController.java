@@ -77,7 +77,7 @@ public class RoleController {
 	public Object edit(HttpServletRequest request,HttpServletResponse response,Role role) {
 		String id = request.getParameter("id");
 		if("GET".equals(request.getMethod().toString().toUpperCase())){
-			ModelAndView mav = new ModelAndView("/jsp/role/edit");
+			ModelAndView mav = new ModelAndView("/jsp/admin/role/edit");
 			mav.addObject("page", roleDao.find(id));
 			return mav;
 		}else{

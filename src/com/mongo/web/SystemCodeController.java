@@ -71,7 +71,7 @@ public class SystemCodeController {
 	public Object edit(HttpServletRequest request,HttpServletResponse response,SystemCode systemCode) {
 		String id = request.getParameter("id");
 		if("GET".equals(request.getMethod().toString().toUpperCase())){
-			ModelAndView mav = new ModelAndView("/jsp/systemcode/edit");
+			ModelAndView mav = new ModelAndView("/jsp/admin/systemcode/edit");
 			mav.addObject("page", systemCodeDao.find(id));
 			return mav;
 		}else{

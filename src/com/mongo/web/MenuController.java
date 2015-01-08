@@ -77,7 +77,7 @@ public class MenuController {
 	public Object edit(HttpServletRequest request,HttpServletResponse response,Menu menu) {
 		String id = request.getParameter("id");
 		if("GET".equals(request.getMethod().toString().toUpperCase())){
-			ModelAndView mav = new ModelAndView("/jsp/menu/edit");
+			ModelAndView mav = new ModelAndView("/jsp/admin/menu/edit");
 			mav.addObject("page", menuDao.find(id));
 			return mav;
 		}else{

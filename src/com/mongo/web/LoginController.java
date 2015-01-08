@@ -17,6 +17,7 @@ import com.mongo.entity.User;
 @Controller
 @SuppressWarnings("unchecked")
 public class LoginController {
+	public static String LOGIN_USER = "user";
 
 	@Autowired
 	UserDao userDao;

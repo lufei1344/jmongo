@@ -3,6 +3,7 @@ package com.mongo.dao.impl;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.stereotype.Repository;
 
@@ -25,6 +26,13 @@ public class SystemCodeDaoImpl implements SystemCodeDao{
 	@Override
 	public Page findPage(Page page, SystemCode t) {
 		Query query = new Query();
+		if(t != null){
+			if(t.getId() != null){
+				Criteria c =Criteria.where("pid").is(t.getId());
+				query.addCriteria(c);
+			}
+			
+		}
 		return baseDao.findPage(SystemCode.class, page, query);
 	}
 

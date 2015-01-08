@@ -61,7 +61,7 @@ public class UserController {
 	public Object edit(HttpServletRequest request,HttpServletResponse response,User user) {
 		String id = request.getParameter("id");
 		if("GET".equals(request.getMethod().toString().toUpperCase())){
-			ModelAndView mav = new ModelAndView("/jsp/user/edit");
+			ModelAndView mav = new ModelAndView("/jsp/admin/user/edit");
 			mav.addObject("page", userDao.find(id));
 			return mav;
 		}else{

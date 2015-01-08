@@ -36,6 +36,7 @@ public class UserDaoImpl implements UserDao{
 			if(user.getDescription() != null){
 				c.and("description").regex(user.getDescription());
 			}
+			query.addCriteria(c);
 		}
 		return baseDao.findPage(User.class, page, query);
 	}

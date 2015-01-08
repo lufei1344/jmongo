@@ -1,9 +1,7 @@
 package com.mongo.entity;
 
 import java.util.Date;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 /**
  * Permission entity. @author MyEclipse Persistence Tools
