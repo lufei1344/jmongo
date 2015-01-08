@@ -12,20 +12,20 @@
 			}
 		}
 	%>
-	<link rel="stylesheet" type="text/css" id="uiTheme" href="themes/<%=easyuiThemeName %>/easyui.css">
-	<link rel="stylesheet" type="text/css"  href="css/zTreeStyle/zTreeStyle.css">
-	<script type="text/javascript" src="js/xheditor/jquery-1.8.0.min.js"></script>
-	<script type="text/javascript" src="js/xheditor/xheditor-1.1.14-zh-cn.min.js" charset="utf-8"></script>
-	<link rel="stylesheet" type="text/css" href="themes/icon.css">
-	<link rel="stylesheet" type="text/css" href="css/common.css">
-	<script type="text/javascript" src="js/jquery.easyui.min.js"></script>
-	<script type="text/javascript" src="js/easyui-lang-zh_CN.js"></script>
-	<script type="text/javascript" src="js/jqueryUtil.js"></script>
-	<script type="text/javascript" src="js/json2.js"></script>
-	<script type="text/javascript" src="js/jquery.ztree.all-3.1.min.js"></script>
-	<script type="text/javascript" src="js/FusionCharts/FusionCharts.js"></script>
-	<script type="text/javascript" src="js/FusionCharts/FusionCharts.jqueryplugin.js"></script>
-	<script type="text/javascript" src="js/FusionCharts/FusionChartsExportComponent.js"></script>
+	<link rel="stylesheet" type="text/css" id="uiTheme" href="${pageContext.request.contextPath}/themes/<%=easyuiThemeName %>/easyui.css"></link>
+	<link rel="stylesheet" type="text/css"  href="${pageContext.request.contextPath}/css/zTreeStyle/zTreeStyle.css"></link>
+	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/themes/icon.css"></link>
+	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/common.css"></link>
+	<script type="text/javascript" src="${pageContext.request.contextPath}/js/xheditor/jquery-1.8.0.min.js"></script>
+	<script type="text/javascript" src="${pageContext.request.contextPath}/js/xheditor/xheditor-1.1.14-zh-cn.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery.easyui.min.js"></script>
+	<script type="text/javascript" src="${pageContext.request.contextPath}/js/easyui-lang-zh_CN.js"></script>
+	<script type="text/javascript" src="${pageContext.request.contextPath}/js/jqueryUtil.js"></script>
+	<script type="text/javascript" src="${pageContext.request.contextPath}/js/json2.js"></script>
+	<script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery.ztree.all-3.1.min.js"></script>
+	<script type="text/javascript" src="${pageContext.request.contextPath}/js/FusionCharts/FusionCharts.js"></script>
+	<script type="text/javascript" src="${pageContext.request.contextPath}/js/FusionCharts/FusionCharts.jqueryplugin.js"></script>
+	<script type="text/javascript" src="${pageContext.request.contextPath}/js/FusionCharts/FusionChartsExportComponent.js"></script>
 	<script type="text/javascript">
 		
 	</script>
